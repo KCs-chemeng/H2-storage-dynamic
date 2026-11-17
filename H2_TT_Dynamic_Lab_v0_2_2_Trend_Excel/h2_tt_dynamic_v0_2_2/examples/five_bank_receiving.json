@@ -1,0 +1,160 @@
+{
+  "version": "0.2.0",
+  "eos": "Leachman",
+  "dt_s": 0.5,
+  "sample_s": 2.0,
+  "tt": {
+    "name": "TT",
+    "volume_m3": 5,
+    "pressure_barg": 200.0,
+    "temperature_c": 45.0,
+    "target_barg": 0.0,
+    "hh_barg": null
+  },
+  "banks": [
+    {
+      "name": "B1",
+      "volume_m3": 2.0,
+      "pressure_barg": 20,
+      "temperature_c": 45,
+      "target_barg": 175,
+      "hh_barg": 210
+    },
+    {
+      "name": "B2",
+      "volume_m3": 2.0,
+      "pressure_barg": 20,
+      "temperature_c": 45,
+      "target_barg": 175,
+      "hh_barg": 210
+    },
+    {
+      "name": "B3",
+      "volume_m3": 2.0,
+      "pressure_barg": 20,
+      "temperature_c": 45,
+      "target_barg": 175,
+      "hh_barg": 210
+    },
+    {
+      "name": "B4",
+      "volume_m3": 2.0,
+      "pressure_barg": 20,
+      "temperature_c": 45,
+      "target_barg": 175,
+      "hh_barg": 210
+    },
+    {
+      "name": "B5",
+      "volume_m3": 2.0,
+      "pressure_barg": 20,
+      "temperature_c": 45,
+      "target_barg": 175,
+      "hh_barg": 210
+    }
+  ],
+  "valves": {
+    "MOV-101": {
+      "cv": 1.5,
+      "stroke_s": 2.0,
+      "characteristic": "Linear",
+      "rangeability": 50.0,
+      "close_s": null
+    },
+    "BYPASS": {
+      "cv": 0.3,
+      "stroke_s": 4.0,
+      "characteristic": "Linear",
+      "rangeability": 50.0,
+      "close_s": null
+    },
+    "PRV-102": {
+      "cv": 1.35,
+      "stroke_s": 3.0,
+      "characteristic": "Equal percentage",
+      "rangeability": 50.0,
+      "close_s": null
+    },
+    "COMP-OUT": {
+      "cv": 0.5,
+      "stroke_s": 3.0,
+      "characteristic": "Linear",
+      "rangeability": 50.0,
+      "close_s": null
+    },
+    "BANK-B1": {
+      "cv": 0.5,
+      "stroke_s": 3.0,
+      "characteristic": "Linear",
+      "rangeability": 50.0,
+      "close_s": null
+    },
+    "BANK-B2": {
+      "cv": 0.5,
+      "stroke_s": 3.0,
+      "characteristic": "Linear",
+      "rangeability": 50.0,
+      "close_s": null
+    },
+    "BANK-B3": {
+      "cv": 0.5,
+      "stroke_s": 3.0,
+      "characteristic": "Linear",
+      "rangeability": 50.0,
+      "close_s": null
+    },
+    "BANK-B4": {
+      "cv": 0.5,
+      "stroke_s": 3.0,
+      "characteristic": "Linear",
+      "rangeability": 50.0,
+      "close_s": null
+    },
+    "BANK-B5": {
+      "cv": 0.5,
+      "stroke_s": 3.0,
+      "characteristic": "Linear",
+      "rangeability": 50.0,
+      "close_s": null
+    }
+  },
+  "k": 1.4,
+  "xt": 0.72,
+  "fp": 1.0,
+  "tt_stop_barg": 10.0,
+  "bank_hh_barg": 210.0,
+  "equalize_dp_bar": 0.3,
+  "equalize_hold_s": 3.0,
+  "equalize_order": [
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "B5"
+  ],
+  "recovery_order": [
+    "B5",
+    "B4",
+    "B3",
+    "B2",
+    "B1"
+  ],
+  "compressor_kg_h": 22.48,
+  "suction_set_barg": 7.0,
+  "suction_min_barg": 1.0,
+  "compressor_max_barg": 200.0,
+  "compressor_ramp_s": 5.0,
+  "compressor_reference_kw": 75.0,
+  "compressor_temperature_c": 45.0,
+  "aftercooler_temperature_c": 30.0,
+  "compressor_enabled": true,
+  "compressor_stop_s": 2.0,
+  "shutdown_mode": "DELAYED",
+  "manual_target_policy": "AUTO_ONLY",
+  "sequence_mode": "EQ_RECOVERY",
+  "actuator_timeout_s": 120.0,
+  "no_flow_delay_s": 10.0,
+  "numerical_max_barg": 350.0,
+  "events": [],
+  "rules": []
+}

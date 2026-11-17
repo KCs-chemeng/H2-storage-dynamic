@@ -1,0 +1,125 @@
+{
+  "version": "0.2.0",
+  "eos": "Ideal",
+  "dt_s": 0.1,
+  "sample_s": 0.1,
+  "tt": {
+    "name": "TT",
+    "volume_m3": 22.9,
+    "pressure_barg": 200.0,
+    "temperature_c": 45.0,
+    "target_barg": 0.0,
+    "hh_barg": null
+  },
+  "banks": [
+    {
+      "name": "A",
+      "volume_m3": 1.0,
+      "pressure_barg": 20,
+      "temperature_c": 45,
+      "target_barg": 100,
+      "hh_barg": 210
+    }
+  ],
+  "valves": {
+    "MOV-101": {
+      "cv": 1.5,
+      "stroke_s": 2.0,
+      "characteristic": "Linear",
+      "rangeability": 50.0,
+      "close_s": null
+    },
+    "BYPASS": {
+      "cv": 0.3,
+      "stroke_s": 4.0,
+      "characteristic": "Linear",
+      "rangeability": 50.0,
+      "close_s": null
+    },
+    "PRV-102": {
+      "cv": 1.35,
+      "stroke_s": 3.0,
+      "characteristic": "Equal percentage",
+      "rangeability": 50.0,
+      "close_s": null
+    },
+    "COMP-OUT": {
+      "cv": 0.5,
+      "stroke_s": 3.0,
+      "characteristic": "Linear",
+      "rangeability": 50.0,
+      "close_s": null
+    },
+    "BANK-A": {
+      "cv": 0.5,
+      "stroke_s": 3.0,
+      "characteristic": "Linear",
+      "rangeability": 50.0,
+      "close_s": null
+    }
+  },
+  "k": 1.4,
+  "xt": 0.72,
+  "fp": 1.0,
+  "tt_stop_barg": 10.0,
+  "bank_hh_barg": 210.0,
+  "equalize_dp_bar": 0.3,
+  "equalize_hold_s": 3.0,
+  "equalize_order": [
+    "A"
+  ],
+  "recovery_order": [
+    "A"
+  ],
+  "compressor_kg_h": 22.48,
+  "suction_set_barg": 7.0,
+  "suction_min_barg": 1.0,
+  "compressor_max_barg": 200.0,
+  "compressor_ramp_s": 5.0,
+  "compressor_reference_kw": 75.0,
+  "compressor_temperature_c": 45.0,
+  "aftercooler_temperature_c": 30.0,
+  "compressor_enabled": true,
+  "compressor_stop_s": 2.0,
+  "shutdown_mode": "DELAYED",
+  "manual_target_policy": "AUTO_ONLY",
+  "sequence_mode": "EQ_RECOVERY",
+  "actuator_timeout_s": 120.0,
+  "no_flow_delay_s": 10.0,
+  "numerical_max_barg": 350.0,
+  "events": [],
+  "rules": [
+    {
+      "name": "P23_STOP",
+      "conditions": [
+        {
+          "variable": "bank.A.pressure",
+          "op": ">=",
+          "value": 23
+        },
+        {
+          "variable": "flow_kg_h",
+          "op": ">",
+          "value": 0
+        }
+      ],
+      "actions": [
+        {
+          "action": "stop",
+          "target": "",
+          "value": 0.0
+        }
+      ],
+      "combine": "ALL",
+      "hold_s": 0.5,
+      "mode": "AUTO",
+      "phase": "EQ",
+      "behavior": "ONCE",
+      "priority": "NORMAL",
+      "enabled": true,
+      "reset_conditions": [],
+      "reset_combine": "ALL",
+      "reset_hold_s": 0.0
+    }
+  ]
+}

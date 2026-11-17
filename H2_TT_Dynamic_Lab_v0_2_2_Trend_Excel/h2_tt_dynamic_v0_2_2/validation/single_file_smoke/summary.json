@@ -1,0 +1,82 @@
+{
+  "time_s": 17.999999999999986,
+  "mode": "AUTO",
+  "phase": "HOLD",
+  "route": "BYPASS",
+  "eos": "Ideal",
+  "shutdown_mode": "DELAYED",
+  "tripped": 0,
+  "tt_barg": 199.79722251735367,
+  "tt_kg": 350.46629350280773,
+  "tt_stop_barg": 10.0,
+  "flow_kg_h": 0.0,
+  "step_avg_kg_h": 0.0,
+  "flow_Nm3_h": 0.0,
+  "flow_at_TT_m3_h": 0.0,
+  "bypass_kg": 0.353899235722289,
+  "compressed_kg": 0.0,
+  "total_transferred_kg": 0.353899235722289,
+  "suction_barg": 0.0,
+  "compressor_speed_pct": 0.0,
+  "compressor_command": 0,
+  "compressor_source": "TERMINAL:HOLD",
+  "compressor_run_h": 0.0,
+  "reference_kWh": 0.0,
+  "mass_error_kg": 1.1368683772161603e-13,
+  "choked": 0,
+  "selected_bank": "A",
+  "bank_A_barg": 24.643604352603173,
+  "bank_A_kg": 1.9553649400242692,
+  "bank_A_in_kg_h": 0.0,
+  "bank_A_received_kg": 0.35389923572228876,
+  "bank_A_target_barg": 100,
+  "bank_A_hh_barg": 210,
+  "bank_A_peak_barg": 24.643604352603173,
+  "MOV-101_command_pct": 0,
+  "MOV-101_actual_pct": 0.0,
+  "MOV-101_source": "TERMINAL:HOLD",
+  "BYPASS_command_pct": 0,
+  "BYPASS_actual_pct": 0.0,
+  "BYPASS_source": "TERMINAL:HOLD",
+  "PRV-102_command_pct": 0,
+  "PRV-102_actual_pct": 0.0,
+  "PRV-102_source": "TERMINAL:HOLD",
+  "COMP-OUT_command_pct": 0,
+  "COMP-OUT_actual_pct": 0.0,
+  "COMP-OUT_source": "TERMINAL:HOLD",
+  "BANK-A_command_pct": 0,
+  "BANK-A_actual_pct": 0.0,
+  "BANK-A_source": "TERMINAL:HOLD",
+  "active_rules": "P23_STOP",
+  "rule_status_json": "{\"P23_STOP\": {\"active\": true, \"fires\": 1}}",
+  "stop_history": [
+    {
+      "reason": "자동시퀀스 시작 전 닫힘 확인",
+      "kind": "NEXT",
+      "request_time_s": 0.0,
+      "complete_time_s": 0.0,
+      "residual_inflow_kg": 0.0,
+      "pressure_at_request": {
+        "A": 20.0
+      },
+      "pressure_at_complete": {
+        "A": 20.0
+      }
+    },
+    {
+      "reason": "P23_STOP: STOP",
+      "kind": "HOLD",
+      "request_time_s": 5.899999999999995,
+      "complete_time_s": 9.89999999999998,
+      "residual_inflow_kg": 0.09070014713483943,
+      "pressure_at_request": {
+        "A": 23.4535040203496
+      },
+      "pressure_at_complete": {
+        "A": 24.643604352603173
+      }
+    }
+  ],
+  "samples_saved": 182,
+  "notes": "등온/단일Bank/준정상Cv. 정지 지연 포함; 배관재고·실제PID·온도·PSV·실제동력 제외."
+}

@@ -1,0 +1,23 @@
+{
+  "ui_checks": 23,
+  "errors": [],
+  "xlsx": {
+    "path": "/mnt/data/h2_tt_dynamic_v0_2_2/validation/H2_TT_Trend_Export_Demo.xlsx",
+    "rows": 511,
+    "events": 21,
+    "signals": 4,
+    "chart_signals": 4,
+    "eos": "PR",
+    "start_s": 0.0,
+    "end_s": 255.0,
+    "sheets": [
+      "요약",
+      "선택추세",
+      "전체기록",
+      "이벤트",
+      "입력조건",
+      "변수설명"
+    ]
+  },
+  "engine_files_unchanged": 6
+}

@@ -1,0 +1,105 @@
+{
+  "version": "0.1.0",
+  "eos": "Leachman",
+  "dt_s": 0.5,
+  "sample_s": 2.0,
+  "tt": {
+    "name": "TT",
+    "volume_m3": 22.9,
+    "pressure_barg": 200.0,
+    "temperature_c": 45.0,
+    "target_barg": 0.0
+  },
+  "banks": [
+    {
+      "name": "A",
+      "volume_m3": 11.7,
+      "pressure_barg": 20.0,
+      "temperature_c": 45.0,
+      "target_barg": 190.0
+    },
+    {
+      "name": "B",
+      "volume_m3": 11.7,
+      "pressure_barg": 20.0,
+      "temperature_c": 45.0,
+      "target_barg": 190.0
+    },
+    {
+      "name": "C",
+      "volume_m3": 10.4,
+      "pressure_barg": 20.0,
+      "temperature_c": 45.0,
+      "target_barg": 190.0
+    }
+  ],
+  "valves": {
+    "MOV-101": {
+      "cv": 1.5,
+      "stroke_s": 2.0,
+      "characteristic": "Linear",
+      "rangeability": 50.0
+    },
+    "BYPASS": {
+      "cv": 0.3,
+      "stroke_s": 4.0,
+      "characteristic": "Linear",
+      "rangeability": 50.0
+    },
+    "PRV-102": {
+      "cv": 1.35,
+      "stroke_s": 3.0,
+      "characteristic": "Equal percentage",
+      "rangeability": 50.0
+    },
+    "COMP-OUT": {
+      "cv": 0.5,
+      "stroke_s": 3.0,
+      "characteristic": "Linear",
+      "rangeability": 50.0
+    },
+    "BANK-A": {
+      "cv": 0.5,
+      "stroke_s": 3.0,
+      "characteristic": "Linear",
+      "rangeability": 50.0
+    },
+    "BANK-B": {
+      "cv": 0.5,
+      "stroke_s": 3.0,
+      "characteristic": "Linear",
+      "rangeability": 50.0
+    },
+    "BANK-C": {
+      "cv": 0.5,
+      "stroke_s": 3.0,
+      "characteristic": "Linear",
+      "rangeability": 50.0
+    }
+  },
+  "k": 1.4,
+  "xt": 0.72,
+  "fp": 1.0,
+  "tt_stop_barg": 10.0,
+  "bank_hh_barg": 210.0,
+  "equalize_dp_bar": 0.3,
+  "equalize_hold_s": 3.0,
+  "equalize_order": [
+    "C",
+    "A",
+    "B"
+  ],
+  "recovery_order": [
+    "C",
+    "A"
+  ],
+  "compressor_kg_h": 22.48,
+  "suction_set_barg": 7.0,
+  "suction_min_barg": 1.0,
+  "compressor_max_barg": 200.0,
+  "compressor_ramp_s": 5.0,
+  "compressor_reference_kw": 75.0,
+  "compressor_temperature_c": 45.0,
+  "aftercooler_temperature_c": 30.0,
+  "events": []
+}

@@ -1,0 +1,5 @@
+{
+  "summary": "{\"kind\":\"table\",\"sheet\":\"요약\",\"address\":\"A5:C16\",\"rows\":12,\"cols\":3,\"values\":[[\"프로그램\",\"H₂ TT Dynamic Lab / HMI 0.2.2, Engine 0.2.0\",\"물리·제어 엔진 유지\"],[\"EOS\",\"PR\",\"선택한 EOS로 모든 재고·압력 계산\"],[\"모델 범위\",\"순수 수소 / 등온 / 유한재고 / Cv 준정상 유동\",\"실제 PID·열수지·압력파 제외\"],[\"내보내기 시각\",\"2026-11-15T10:45:50.000Z\",\"UTC\"],[\"Snapshot 모사시각\",255,\"s\"],[\"구간 시작\",0,\"s\"],[\"구간 종료\",255,\"s\"],[\"구간 길이\",255,\"s\"],[\"저장 표본 수\",511,\"표시 간소화 없이 저장\"],[\"최대 순간유량\",229.8101596081667,\"kg/h\"],[\"구간 이송량\",14.03431301242097,\"kg / 누적값의 차\"],[\"최대 절대 질량수지 오차\",1.0231815394945443e-12,\"kg\"]]}",
+  "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}",
+  "chart": "{\"kind\":\"drawing\",\"sheet\":\"선택추세\",\"drawingType\":\"chart\",\"id\":\"ch/oza1wzed\",\"anchor\":{\"from\":{\"row\":3,\"col\":0,\"rowOffsetEmu\":0,\"colOffsetEmu\":0,\"rowOffsetPx\":0,\"colOffsetPx\":0},\"to\":{\"row\":26,\"col\":12,\"rowOffsetEmu\":0,\"colOffsetEmu\":0,\"rowOffsetPx\":0,\"colOffsetPx\":0}}}"
+}

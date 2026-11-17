@@ -1,0 +1,21 @@
+﻿time_s,code,message,detail
+0.0,INIT,v0.2.0 / 1 banks / Ideal / DELAYED,
+0.0,STOP_REQUEST,자동시퀀스 시작 전 닫힘 확인,"{""kind"": ""NEXT"", ""shutdown_mode"": ""DELAYED"", ""time_s"": 0.0, ""tt_kg"": 350.8201927385299, ""pressures"": {""A"": 20.0}}"
+0.0,STOP_COMPLETE,자동시퀀스 시작 전 닫힘 확인,"{""reason"": ""자동시퀀스 시작 전 닫힘 확인"", ""kind"": ""NEXT"", ""request_time_s"": 0.0, ""complete_time_s"": 0.0, ""residual_inflow_kg"": 0.0, ""pressure_at_request"": {""A"": 20.0}, ""pressure_at_complete"": {""A"": 20.0}}"
+0.0,SEQUENCE,EQ_A,"{""target_barg"": 100}"
+0.0,AUTO,EQ_RECOVERY: EQ_A → REC_A,
+0.0,VALVE_CMD,MOV-101: 100% / SEQUENCE,"{""tag"": ""MOV-101"", ""source"": ""SEQUENCE""}"
+0.0,VALVE_CMD,BYPASS: 100% / SEQUENCE,"{""tag"": ""BYPASS"", ""source"": ""SEQUENCE""}"
+0.0,VALVE_CMD,BANK-A: 100% / SEQUENCE,"{""tag"": ""BANK-A"", ""source"": ""SEQUENCE""}"
+1.9,VALVE_REACHED,MOV-101: 100% / SEQUENCE,"{""completion_time_s"": 2.0000000000000004}"
+2.9,VALVE_REACHED,BANK-A: 100% / SEQUENCE,"{""completion_time_s"": 3.0000000000000013}"
+3.9,VALVE_REACHED,BYPASS: 100% / SEQUENCE,"{""completion_time_s"": 4.000000000000002}"
+5.9,RULE_FIRE,P23_STOP,"{""values"": {""bank.A.pressure"": 23.4535040203496, ""flow_kg_h"": 237.5193390690728}, ""hold_s"": 0.5, ""priority"": ""NORMAL""}"
+5.9,STOP_REQUEST,P23_STOP: STOP,"{""kind"": ""HOLD"", ""shutdown_mode"": ""DELAYED"", ""time_s"": 5.899999999999995, ""tt_kg"": 350.55699364994257, ""pressures"": {""A"": 23.4535040203496}}"
+5.9,VALVE_CMD,MOV-101: 0% / STOP:P23_STOP: STOP,"{""tag"": ""MOV-101"", ""source"": ""STOP:P23_STOP: STOP""}"
+5.9,VALVE_CMD,BYPASS: 0% / STOP:P23_STOP: STOP,"{""tag"": ""BYPASS"", ""source"": ""STOP:P23_STOP: STOP""}"
+5.9,VALVE_CMD,BANK-A: 0% / STOP:P23_STOP: STOP,"{""tag"": ""BANK-A"", ""source"": ""STOP:P23_STOP: STOP""}"
+7.8,VALVE_REACHED,MOV-101: 0% / STOP:P23_STOP: STOP,"{""completion_time_s"": 7.899999999999988}"
+8.8,VALVE_REACHED,BANK-A: 2.08167e-14% / STOP:P23_STOP: STOP,"{""completion_time_s"": 8.899999999999984}"
+9.8,VALVE_REACHED,BYPASS: 0% / STOP:P23_STOP: STOP,"{""completion_time_s"": 9.89999999999998}"
+9.9,STOP_COMPLETE,P23_STOP: STOP,"{""reason"": ""P23_STOP: STOP"", ""kind"": ""HOLD"", ""request_time_s"": 5.899999999999995, ""complete_time_s"": 9.89999999999998, ""residual_inflow_kg"": 0.09070014713483943, ""pressure_at_request"": {""A"": 23.4535040203496}, ""pressure_at_complete"": {""A"": 24.643604352603173}}"

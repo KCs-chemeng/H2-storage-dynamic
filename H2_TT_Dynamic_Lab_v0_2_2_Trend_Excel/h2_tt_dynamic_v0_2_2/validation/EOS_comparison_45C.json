@@ -1,0 +1,30 @@
+[
+  {
+    "pressure_barg": 10,
+    "temperature_C": 45,
+    "Leachman_rho_kg_m3": 0.8341091872123316,
+    "PR_rho_kg_m3": 0.836690349139199,
+    "PR_vs_Leachman_percent": 0.3094513244116026
+  },
+  {
+    "pressure_barg": 20,
+    "temperature_C": 45,
+    "Leachman_rho_kg_m3": 1.5825728169030746,
+    "PR_rho_kg_m3": 1.591597192645104,
+    "PR_vs_Leachman_percent": 0.5702344717186003
+  },
+  {
+    "pressure_barg": 190,
+    "temperature_C": 45,
+    "Leachman_rho_kg_m3": 13.096556426214816,
+    "PR_rho_kg_m3": 13.550443038775995,
+    "PR_vs_Leachman_percent": 3.4656943229187664
+  },
+  {
+    "pressure_barg": 200,
+    "temperature_C": 45,
+    "Leachman_rho_kg_m3": 13.707809565063343,
+    "PR_rho_kg_m3": 14.197151090397366,
+    "PR_vs_Leachman_percent": 3.5698010175250205
+  }
+]

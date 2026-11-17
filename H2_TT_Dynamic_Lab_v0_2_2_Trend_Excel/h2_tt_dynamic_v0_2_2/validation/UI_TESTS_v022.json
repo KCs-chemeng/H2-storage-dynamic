@@ -1,0 +1,97 @@
+{
+  "checks": [
+    {
+      "check": "Popup is non-modal",
+      "result": "PASS"
+    },
+    {
+      "check": "Opening popup preserves simulation state",
+      "result": "PASS"
+    },
+    {
+      "check": "All pressure records available",
+      "result": "PASS"
+    },
+    {
+      "check": "Chart freeze does not stop engine or advance chart",
+      "result": "PASS"
+    },
+    {
+      "check": "Live view resumes at current time",
+      "result": "PASS"
+    },
+    {
+      "check": "Custom time range uses minute inputs",
+      "result": "PASS"
+    },
+    {
+      "check": "Commands and actual openings both selectable",
+      "result": "PASS"
+    },
+    {
+      "check": "Multiple independent popups",
+      "result": "PASS"
+    },
+    {
+      "check": "Excel export leaves engine unchanged",
+      "result": "PASS"
+    },
+    {
+      "check": "Excel raw data includes every record",
+      "result": "PASS"
+    },
+    {
+      "check": "Excel EOS metadata is PR",
+      "result": "PASS"
+    },
+    {
+      "check": "Rendering group pressure is read-only",
+      "result": "PASS"
+    },
+    {
+      "check": "Rendering group flow is read-only",
+      "result": "PASS"
+    },
+    {
+      "check": "Rendering group normal_flow is read-only",
+      "result": "PASS"
+    },
+    {
+      "check": "Rendering group opening is read-only",
+      "result": "PASS"
+    },
+    {
+      "check": "Rendering group inventory is read-only",
+      "result": "PASS"
+    },
+    {
+      "check": "Rendering group transferred is read-only",
+      "result": "PASS"
+    },
+    {
+      "check": "Compact popup has visible plot",
+      "result": "PASS"
+    },
+    {
+      "check": "Popup survives emptied display buffer",
+      "result": "PASS"
+    },
+    {
+      "check": "Popup follows new experiment without old records",
+      "result": "PASS"
+    },
+    {
+      "check": "No modal grab after reset",
+      "result": "PASS"
+    },
+    {
+      "check": "Popup close does not stop parent",
+      "result": "PASS"
+    },
+    {
+      "check": "No Tk callback exceptions",
+      "result": "PASS"
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,21 @@
+{
+  "checks": [
+    {
+      "check": "Main EXPORT Excel action writes native workbook",
+      "result": "PASS"
+    },
+    {
+      "check": "Main EXPORT preserves state",
+      "result": "PASS"
+    },
+    {
+      "check": "Popup selected-range Excel action writes workbook",
+      "result": "PASS"
+    },
+    {
+      "check": "Popup export preserves state",
+      "result": "PASS"
+    }
+  ],
+  "errors": []
+}

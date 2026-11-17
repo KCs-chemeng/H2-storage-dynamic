@@ -1,0 +1,12 @@
+{
+  "hmi_version": "0.2.2",
+  "engine_version": "0.2.0",
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "automated_tests": 81,
+  "gui_checks": 23,
+  "excel_ui_action_checks": 4,
+  "platform": "Linux / Xvfb / Tk",
+  "excel_native_app_tested": false,
+  "windows_tested": false,
+  "xlsx_checks": "OOXML XML parse, numeric values/formula caches, separate spreadsheet reader+renderer passed"
+}

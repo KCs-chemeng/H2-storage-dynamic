@@ -1,0 +1,8 @@
+H2 TT Dynamic Lab | PLC HMI v0.2.2
+1. Python 3.10+ / Tkinter 준비
+2. run_windows.bat 또는 python main.py 실행
+3. PROCESS -> 추세 팝업 / TRENDS에서 독립 창 열기
+4. 표시구간 Excel 또는 전체 Excel로 .xlsx 저장 (추가 설치 없음)
+5. PR: 설비 구성 -> 압축기 / 물성 -> PR -> 새 실험으로 적용
+6. 기본 EOS는 Leachman 유지. NRTL은 현재 순수 수소 기체 모델에 적용하지 않음.
+README_KO.md에 사용법과 Excel 구성·검증범위 기재.
